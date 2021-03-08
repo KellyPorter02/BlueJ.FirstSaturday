@@ -29,10 +29,11 @@ public class WriteLoops {
 
     public int oneToTen() {
         int w = 0;
-
+        for (int i = 0; i < 10; i++) {
         // Write a FOR loop that counts from 1 to 10.
         // calling
-        w = w + 1;
+        w = w + 1; 
+    }
         // each time through the loop
         
         return w;
@@ -40,10 +41,11 @@ public class WriteLoops {
 
     public int startAtTwentyOne() {
         int w = 0;
-
+        for (int i = 21; i <= 31; i++) {
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
         w = w + 1;
+    }
         // each time through the loop
         
         return w;
@@ -51,10 +53,11 @@ public class WriteLoops {
 
     public int countDown() {
         int w = 0;
-
+        for (int i = 100; i > 0; i--) {
         // Write a FOR loop that counts down from 100 to 0.
         // calling
         w = w + 1;
+    }
         // each time through the loop
         
         return w;
@@ -62,20 +65,22 @@ public class WriteLoops {
 
     public int byTwoTo32() {
         int w = 0;
-
+        for (int i = 0; i <= 32; i += 2) {
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
         w = w + 1;
+    }
         // each time through the loop
         return w;
     }
 
     public int countDownFrom5000() {
         int w = 0;
-
+        for (int i = 1; i < 5001; i += 11) {
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
         w = w + 1;
+    }
         // each time through the loop
         
         return w;
@@ -116,7 +121,7 @@ public class WriteLoops {
         return w;
     }
 
-    public void simpleLoops() {
+    /*public void simpleLoops() {
         int i = 0;
 
         // sample while loop
@@ -135,7 +140,7 @@ public class WriteLoops {
         // The do while loop will run the code at least once before it checks the co
         // nditional. The while loop will check the conditional first, and only run 
         // if it is true.
-    }
+    }*/
 
     // Write a WHILE loop that checks “gpsCurrentLocation()”
     // and if that is not equal to “Home” then and it calls “driveSomeMore()”.
@@ -164,7 +169,7 @@ public class WriteLoops {
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public int checkGameScore() {
+    public boolean checkGameScore() {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
@@ -173,16 +178,15 @@ public class WriteLoops {
 
         // do your while loop here
         while (runningScore < highestScore) {
-            currentScore += runningScore;
-            w = w + 1;
+            runningScore += currentScore;
             currentScore = gameNextScore();
-            
+            w = w + 1;
         }
             // calling
         
             // each time through the inner loop
         
-        return w; // >= 3;
+        return w >= 3; // >= 3;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
