@@ -217,7 +217,7 @@ public class WriteLoops {
         while (serverIsRunning() == true) {
             waitFor(5);
         // calling
-            w = w + 1;
+            w += 1;
         }
         if (serverIsRunning() == false) {
             sendEmergencyText("Help!", adminPhoneNumber);
